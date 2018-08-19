@@ -1,0 +1,12 @@
+<%= session[:user_id] %>
+<h1>User List</h1>
+
+<% @users.each do |user| %>
+
+<%= user.id %>:
+<%= user.name %>, 
+admin? <%= user.admin %></br>
+
+<% end %>
+
+<%= link_to("ログアウト", "/logout",{method:"post"}) %>
