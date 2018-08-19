@@ -9,7 +9,7 @@ class UserController < ApplicationController
     if @user
       
       session[:user_id] = @user.id
-      redirect_to("/user/index")
+      redirect_to("/land")
        
     else
       render("user/login_page")

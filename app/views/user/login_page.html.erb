@@ -1,5 +1,15 @@
-<%= form_tag("/user/login") do %>
-          <p>Pass:</p>
+<div class="container">
+     
+     <div class="login-page">
+               
+       <%= form_tag("/user/login") do %>
+          <img src="/key.png" class="key">
+          <a>Pass:</a>
           <input name="name">
-          <input type="submit" value="ログイン">
+          <p></p>
+          <img src="/dotline.png" class="dotline">
+          <p></p>
+          <input type="submit" value="Login" class="login-button">
         <% end %>
+     </div>
+</div>

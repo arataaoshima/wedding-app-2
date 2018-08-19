@@ -3,6 +3,8 @@ class AttendanceController < ApplicationController
   end
   
   def create
+    
+    
       @attendance = Attendance.new
       @attendance.name = params[:name]
       @attendance.email = params[:email]
@@ -11,11 +13,21 @@ class AttendanceController < ApplicationController
       @attendance.come = params[:attendance]
       @attendance.save
       
-      redirect_to ("/attendance/index")
+      redirect_to ("/attendance/thankyou")
   end 
   
   def index
-    @attendances = Attendance.all
+      if @current_user == nil
+        redirect_to("/")
+        
+      else 
+        @attendances = Attendance.all
+      end
+    
+  end
+  
+  def thankyou
+    
   end
   
   

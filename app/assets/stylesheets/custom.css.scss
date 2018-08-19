@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'honoka';  //font-name
+  src: font-url("/assets/honokamarugo-forweb.eot");
+  src: font-url("/assets/honokamarugo-forweb.woff") format("woff"), font-url("/assets/honokamarugo-forweb.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'caveat';  //font-name
+  src: font-url("/assets/caveat.eot");
+  src: font-url("/assets/caveat.woff") format("woff"), font-url("/assets/caveat.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container{
+    text-align:center;
+    font-family:'honoka';
+}
+
+.container h1 p{
+    font-family:'honoka';
+}
+
+
+.home-login{
+    text-align:center;
+    margin:0 auto;
+    margin-bottom:100px;
+}
+
+.home-login-link{
+      font-size:100px;
+      font-family:'caveat';
+      text-decoration:none;
+      color:black;
+}
+
+.dotline{
+    width:35%;
+}
+
+.login-page{
+    padding-top:100px;
+}
+
+.key{
+    width:6%;
+}
+
+.login-button{
+    font-size:80px;
+    font-family:'caveat';
+    margin-top:20px;
+    border:none;
+    background-color:transparent;
+}
+.welcome-logo{
+    width:40%;
+}
+
+.thankyou{
+    padding-top:70px;
+    font-family:'caveat';
+    font-size:100px;
+}
+
+.dove{
+    width:5%;
+    padding-left:250px;
+}
