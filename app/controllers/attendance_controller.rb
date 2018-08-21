@@ -3,8 +3,6 @@ class AttendanceController < ApplicationController
   end
   
   def create
-    
-    
       @attendance = Attendance.new
       @attendance.name = params[:name]
       @attendance.email = params[:email]
@@ -29,6 +27,19 @@ class AttendanceController < ApplicationController
   def thankyou
     
   end
+  
+  def sorry
+  end
+  
+   def sorrysend
+      @attendance = Attendance.new
+      @attendance.name = params[:name]
+      @attendance.come = 2
+      @attendance.save
+      
+      redirect_to ("/land")
+   end 
+  
   
   
 end

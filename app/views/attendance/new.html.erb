@@ -1,5 +1,5 @@
-<h1>Attendance#new</h1>
-
+<div class="container">
+<h1>Please register your info here!</h1>
 <div class="attendance-form">
     
 <%= form_tag("/attendance/create") do %>
@@ -7,22 +7,24 @@
 <p>おなまえ</p>
 <input name="name"  class="form-control">
 
-<p>Email</p>
+<p>メールアドレス</p>
 <input name="email"  class="form-control">
 
-<p>苦手な食べ物（アレルギー等）</p>
+<p>食べ物のアレルギーなど</p>
 <input name="allergy"  class="form-control">
 
-<p>これまで出会ったなかで一番良い本・マンガ</p>
+<p>一番好きな本/マンガ/映画/音楽</p>
 <input name="book"  class="form-control">
 
 <p>と、その理由</p>
 <textarea name="content" class="form-control" rows="4"></textarea>
 <p></p>
 
-<input type="submit">
-
+<input type="image"
+src="/sankabutton.png" alt="送信"
+width="165px">
 
 
 <% end %>
+</div>
 </div>

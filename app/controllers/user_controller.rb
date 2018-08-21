@@ -1,7 +1,11 @@
 class UserController < ApplicationController
   def login_page
-    
+    if @current_user 
+        redirect_to("/land")
+    end
+     
   end
+    
   
   def login
       @user = User.find_by(name: params[:name])
@@ -19,7 +23,7 @@ class UserController < ApplicationController
   
   def logout
     session[:user_id] = nil
-    redirect_to("/user/index")
+    redirect_to("/")
     
   end
   

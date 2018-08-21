@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   post 'attendance/create'
   get 'attendance/index'
   get 'attendance/thankyou'
+  get 'attendance/cantcome' =>"attendance#sorry"
+  post 'attendance/sorrysend'
   
 
   get 'user/login' =>"user#login_page"

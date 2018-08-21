@@ -18,7 +18,41 @@
   font-style: normal;
 }
 
+.navbar{
+    background-color:transparent;
+    border:none;
+    font-family: 'honoka'; 
+    position: fixed; /* ヘッダーを固定(これが重要) */
+    top: 0; /* 固定する位置 */
+    left: 0; /* 固定する位置 */
+    right: 0;  /* 固定する位置 */
+}
+
+.navbar-brand{
+    padding-top:0px;
+    margin-top:0px;
+}
+
+.navbar-right{
+     //float:right;
+     padding-right:0;
+     margin-right:0;
+}
+
+.nav-logo{
+    padding-top:0px;
+    margin-top:0px;
+    width:80px;
+    //float:left;
+}
+
+.navbar-content{
+   // float:left;
+}
+
+
 .container{
+    margin-top:80px;
     text-align:center;
     font-family:'honoka';
 }
@@ -71,6 +105,61 @@
 }
 
 .dove{
-    width:5%;
-    padding-left:250px;
+    width:10%;
+    margin-left:250px;
+}
+
+.sorry{
+    width:50%;
+}
+
+.attendance-form p {
+}
+
+.thankyou-container p {
+    font-size:23px;
+}
+
+.yes-frame{
+    width:20%;
+    margin-left:40px;
+    margin-right:40px;
+}
+
+.sorry-submit{
+    margin-top:20px;
+    margin-bottom:50px;
+}
+
+#attendnace-yes{
+    position:relative;
+}
+
+#doodle-yes{
+    width:15%;
+    position:absolute;
+    
+    
+}
+
+.yes-frame-samll{
+    width:3%;
+}
+
+
+
+.access-wrapper{
+    margin-top:50px;
+    width:80%;
+}
+.gmap{
+    float:left;
+    margin-right:10%;
+    margin-left:5%;
+}
+
+.access-content{
+    //float:right;
+    text-align:left;
+    //margin-left:100px;
 }
