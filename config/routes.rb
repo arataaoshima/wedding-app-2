@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   get 'attendance/thankyou'
   get 'attendance/cantcome' =>"attendance#sorry"
   post 'attendance/sorrysend'
+  get 'canntocome/land' => 'attendance#sorry_land'
+  
+  get 'attendance/list'
   
 
   get 'user/login' =>"user#login_page"
@@ -17,6 +20,7 @@ Rails.application.routes.draw do
 
   get '/' =>"welcome#home"
   get '/land'=>"welcome#land"
+  get '/place' =>'welcome#place'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

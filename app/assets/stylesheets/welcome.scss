@@ -55,3 +55,53 @@
 .message p{
     float:left;
 }
+
+
+.greeting-wrapper{
+    margin-top:50px;
+    padding-top:60px;
+    margin: 0 auto;
+    text-align:center;
+    //background-color:yellow;
+    width:70%;
+}
+
+.chihiro-arata {
+    //text-align:center;
+    float:left;
+    display: inline;
+    width:25%;
+    margin-left:80px;
+    margin-right:100px;
+}
+
+.greeting-message{
+    
+    display: inline;
+    text-align:left;
+}
+
+.bride-grrom-photo {
+    width:24%;
+    margin:0 40px;
+}
+
+.whenwhere {
+    margin-top:50px;
+}
+
+.when {
+    display: inline-block;
+    //float:left;
+    
+    margin-right:100px;
+    width:250px;
+}
+
+.where {
+    padding-left:40px;
+    display: inline-block;
+    //float:right;
+     
+     width:250px;
+}

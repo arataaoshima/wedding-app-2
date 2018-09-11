@@ -11,4 +11,6 @@ class WelcomeController < ApplicationController
     end
   end
     
+    def place
+    end
 end

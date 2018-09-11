@@ -37,9 +37,26 @@ class AttendanceController < ApplicationController
       @attendance.come = 2
       @attendance.save
       
-      redirect_to ("/land")
+      redirect_to ("/canntocome/land")
    end 
+   
+  def list
+    
+    @attendances = Attendance.all
+    
+    @attendances_index = []
+    @attendances.each do |attendance|
+    @attendances_index << attendance
+    end
+    
+   respond_to do |f|
+     f.html
+     f.json {render json: @attendances_index }
+    end
+    
+  end
   
-  
+  def sorry_land
+  end
   
 end
