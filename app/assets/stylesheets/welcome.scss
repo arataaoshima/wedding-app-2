@@ -12,10 +12,11 @@
 }
 
 .land-p2{
-    height:800px;
+    height:600px;
 }
 
 .land-p2 h1{
+    padding-top:50px;
      font-family:'caveat';
      font-size:60px;
 }
@@ -41,7 +42,10 @@
 .land-p5 h1{
      font-family:'caveat';
      font-size:60px;
-     
+}
+
+.land-p5 h4{
+   padding-top:70px;  
 }
 
 .land-p5{
@@ -104,4 +108,9 @@
     //float:right;
      
      width:250px;
+}
+
+#construction {
+    width:100%;
+    opacity:0.6;
 }
