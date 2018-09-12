@@ -3,8 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .land-p1{
-    height:800px;
+    height:500px;
 }
+
 
 .land-p1 h1{
      font-family:'caveat';
@@ -118,4 +119,48 @@
 #construction {
     width:100%;
     opacity:0.6;
+}
+
+@media (max-width: 670px) {
+   .land-p1{
+    height:200px;
+}
+  .welcome-logo{
+      width:80%;
+  }
+  
+  .yes-frame{
+      width:30%;
+       margin-left:10px;
+    margin-right:10px;
+  }
+  
+  .chihiro-arata {
+    //text-align:center;
+    float:none;
+    display: inline;
+    width:65%;
+    margin-left:0px;
+    margin-right:0px;
+}
+
+.greeting-wrapper{
+    margin-top:0px;
+    padding-top:20px;
+    margin: 0 auto;
+    text-align:center;
+    //background-color:yellow;
+    width:90%;
+}
+
+.greeting-message{
+    width:100%;
+    display: block;
+    text-align:center;
+}
+
+.greeting-message p{
+    font-size:13px;
+}
+    
 }
