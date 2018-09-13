@@ -6,6 +6,7 @@ class AttendanceController < ApplicationController
       @attendance = Attendance.new
       @attendance.name = params[:name]
       @attendance.email = params[:email]
+      @attendance.allergy = params[:allergy]
       @attendance.book = params[:book]
       @attendance.content = params[:content]
       @attendance.come = params[:attendance]
@@ -54,6 +55,30 @@ class AttendanceController < ApplicationController
      f.json {render json: @attendances_index }
     end
     
+  end
+  
+  def delete
+    @attendance = Attendance.find(params[:id])
+    @attendance.destroy
+    redirect_to ("/attendance/index")
+  end
+  
+  def update
+    @attendance = Attendance.find(params[:id])
+
+  end
+  
+  def change
+    @attendance = Attendance.find(params[:id])
+      @attendance.name = params[:name]
+      @attendance.email = params[:email]
+      @attendance.allergy = params[:allergy]
+      @attendance.book = params[:book]
+      @attendance.content = params[:content]
+      @attendance.come = params[:attendance]
+      @attendance.save
+      
+      redirect_to ("/attendance/index")
   end
   
   def sorry_land

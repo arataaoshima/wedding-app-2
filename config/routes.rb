@@ -9,7 +9,9 @@ Rails.application.routes.draw do
   get 'canntocome/land' => 'attendance#sorry_land'
   
   get 'attendance/list'
-  
+  post 'attendance/delete/:id' => "attendance#delete"
+  get "/attendance/update/:id" => "attendance#update"
+  post "/attendance/update/:id" => "attendance#change"
 
   get 'user/login' =>"user#login_page"
   post 'user/login' =>"user#login"
@@ -17,6 +19,7 @@ Rails.application.routes.draw do
   get "user/new" => "user#new"
   post "user/create" => "user#create"
   get "user/index" =>"user#index"
+
 
   get '/' =>"welcome#home"
   get '/land'=>"welcome#land"

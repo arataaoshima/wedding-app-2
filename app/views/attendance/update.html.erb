@@ -1,0 +1,28 @@
+<div class="container">
+
+<div class="attendance-form">
+<h1>Please change registration information here!</h1>
+<%= form_tag("/attendance/update/#{@attendance.id}") do %>
+
+<p>おなまえ</p>
+<input name="name"  class="form-control" value="<%=@attendance.name %>">
+
+<p>メールアドレス</p>
+<input name="email"  class="form-control"  value="<%=@attendance.email %>">
+
+<p>食べ物のアレルギーなど</p>
+<input name="allergy"  class="form-control" value="<%=@attendance.allergy %>">
+
+<p>一番好きな本/マンガ/映画/音楽</p>
+<input name="book"  class="form-control" value="<%=@attendance.book %>">
+
+<p>と、その理由</p>
+<textarea name="content" class="form-control" rows="4" value="<%=@attendance.content %>"></textarea>
+<p></p>
+
+<input type='submit' value="Change">
+
+
+<% end %>
+</div>
+</div>
