@@ -1,7 +1,25 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Attendance</th>
+      <th scope="col">Email</th>
+      <th scope="col">Book</th>
+      <th scope="col">Comment</th>
+    </tr>
+  </thead>
+  <%= @attendances.each do |attendance| %>
+  <tbody>
+    <tr>
+      <th scope="row"><%= attendance.id %></th>
+      <td><%= attendance.name %></td>
+      <td><%= attendance.come %></td>
+      <td><%= attendance.email %></td>
+      <td><%= attendance.book %></td>
+      <td><%= attendance.content %></td>
+    </tr>
+  </tbody>
+  <% end %>
+</table>
 
-<%= @attendances.each do |attendance| %>
-   <%= attendance.name %>
-   <%= attendance.email %>
-   <%= attendance.book %>
- 
-<% end %>
