@@ -9,7 +9,7 @@ class AttendanceController < ApplicationController
       @attendance.allergy = params[:allergy]
       @attendance.book = params[:book]
       @attendance.content = params[:content]
-      @attendance.come = params[:attendance]
+      @attendance.come = 1
       @attendance.save
       
       redirect_to ("/attendance/thankyou")
