@@ -13,22 +13,20 @@
       <th scope="col">Delete</th>
     </tr>
   </thead>
-  <%= @attendances.each do |attendance| %>
+  <% @attendances.each do |attendance| %>
   <tbody>
     <tr>
-      <th scope="row"><%= attendance.id %></th>
+      <td><%= attendance.id %></td>
       <td><%= attendance.name %></td>
       <td><%= attendance.come %></td>
       <td><%= attendance.email %></td>
       <td><%= attendance.book %></td>
       <td><%= attendance.content %></td>
       <td><%= attendance.allergy %></td>
-      
       <td><%= link_to "Update","/attendance/update/#{attendance.id}" %></td>
       <td><%= link_to "Delete","/attendance/delete/#{attendance.id}", method: :post, data: { confirm:"Are you sure?"} %> </td>
     </tr>
   </tbody>
   <% end %>
 </table>
-
 </div>

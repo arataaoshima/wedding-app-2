@@ -1,5 +1,7 @@
 class AttendanceController < ApplicationController
+  
   def new
+    
   end
   
   def create
@@ -14,6 +16,11 @@ class AttendanceController < ApplicationController
       
       redirect_to ("/attendance/thankyou")
   end 
+  
+  def backup
+     @backups = Attendance.all
+     @backup = Attendance.find(1)
+  end
   
   def index
       if @current_user == nil
@@ -41,21 +48,7 @@ class AttendanceController < ApplicationController
       redirect_to ("/canntocome/land")
    end 
    
-  def list
-    
-    @attendances = Attendance.all
-    
-    @attendances_index = []
-    @attendances.each do |attendance|
-    @attendances_index << attendance
-    end
-    
-   respond_to do |f|
-     f.html
-     f.json {render json: @attendances_index }
-    end
-    
-  end
+
   
   def delete
     @attendance = Attendance.find(params[:id])
@@ -81,7 +74,26 @@ class AttendanceController < ApplicationController
       redirect_to ("/attendance/index")
   end
   
+  
+  
   def sorry_land
   end
   
 end
+  
+  
+    def list
+    
+    @attendances = Attendance.all
+    
+    @attendances_index = []
+    @attendances.each do |attendance|
+    @attendances_index << attendance
+  end
+    
+   respond_to do |f|
+     f.html
+     f.json {render json: @attendances_index }
+    end
+    
+  end

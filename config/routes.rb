@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'attendance/cantcome' =>"attendance#sorry"
   post 'attendance/sorrysend'
   get 'canntocome/land' => 'attendance#sorry_land'
+  get '/backup' => 'attendance#backup'
   
   get 'attendance/list'
   post 'attendance/delete/:id' => "attendance#delete"
