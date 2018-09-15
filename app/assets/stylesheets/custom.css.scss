@@ -18,6 +18,11 @@
   font-style: normal;
 }
 
+body{
+    background-color:#fffbe66a;
+    font:'honoka';
+}
+
 .navbar{
     background-color:transparent;
     border:none;
@@ -30,7 +35,9 @@
 
 .navbar-brand{
     padding-top:0px;
-    margin-top:0px;
+    margin-top:0px5
+    
+    
 }
 
 .navbar-right{
@@ -52,6 +59,7 @@
 
 
 .container{
+    
     margin-top:80px;
     text-align:center;
     font-family:'honoka';
@@ -126,6 +134,7 @@
 }
 
 .yes-frame{
+    background-color:transparent;
     width:20%;
     margin-left:40px;
     margin-right:40px;
@@ -198,6 +207,10 @@
     //float:right;
     //text-align:left;
     //margin-left:100px;
+}
+
+.access-content p{
+    font-size:15px;
 }
 
 .navbar-brand{

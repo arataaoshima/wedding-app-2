@@ -41,6 +41,7 @@
      font-size:60px;
      padding-bottom:80px;
 }
+
 .land-p4{
     padding-top:50px;
     height:700px;
@@ -122,11 +123,18 @@
     opacity:0.6;
 }
 
+
+
+
 @media (max-width: 670px) {
-   .land-p1{
-    height:250px;
+    
+  .land-p1{
+    height:230px;
 }
-  .welcome-logo{
+
+　  
+　  
+　   .welcome-logo{
       width:80%;
   }
   
@@ -143,7 +151,7 @@
     width:65%;
     margin-left:0px;
     margin-right:0px;
-}
+   }
 
 .greeting-wrapper{
     margin-top:0px;
@@ -161,7 +169,7 @@
 }
 
 .greeting-message p{
-    font-size:13px;
+    font-size:11px;
 }
 
 .land-p3 h3{
@@ -170,8 +178,6 @@
      font-size:20px;
 }
 
-.land-p5 {
-}
 
 .bride-grrom-photo {
     width:38%;
@@ -217,6 +223,10 @@
    padding-top:90px;  
 }
 
+.land-p5 h1{
+     font-size:34px;
+}
+
 .greeting-message{
     margin-bottom:50px;
     padding-bottom:30px;
@@ -226,5 +236,38 @@
     padding-top:70px;
 }
 
+.land-p4 h1{
+    padding-top:100px;
+    padding-bottom:40px;
+}
+
+.whenwhere p{
+  font-size:15px;  
+}
+.greeting-message P{
+    font-size:14px;  
+}
+
+}
+ 
     
+@media (max-width: 320px) {
+    
+    .land-p5 h1{
+     font-size:28px;
+}
+
+  .access-content p{
+    font-size:13px;
+    
+}
+.whenwhere p{
+  font-size:14px;  
+}
+
+.greeting-message P{
+    font-size:12px;  
+}
+
+
 }
