@@ -36,8 +36,6 @@ body{
 .navbar-brand{
     padding-top:0px;
     margin-top:0px5
-    
-    
 }
 
 .navbar-right{
@@ -60,7 +58,7 @@ body{
 
 .container{
     
-    margin-top:80px;
+    //margin-top:80px;
     text-align:center;
     font-family:'honoka';
 }
@@ -108,7 +106,8 @@ body{
     background-color:transparent;
 }
 .welcome-logo{
-    width:40%;
+    padding-top:110px;
+    width:32%;
 }
 
 .thankyou{
@@ -183,6 +182,8 @@ body{
 @media (max-width: 670px) {
 .container{
    width:100;
+   margin-top:80px;
+
 }
 
 .gmap{
@@ -226,4 +227,12 @@ body{
     margin-bottom:100px;
 }
 
+
+
+
+@media (min-width: 750px) {
+    //.land-p1 {
+        //background-image: url("/background.gif");
+    }
+    
 }

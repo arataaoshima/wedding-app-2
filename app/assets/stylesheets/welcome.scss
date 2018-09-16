@@ -3,7 +3,14 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .land-p1{
-    height:500px;
+    
+    background-image: url("/p1-photo.jpg");
+    text-align:center;
+    font-family:'honoka';
+    background-size:cover;
+    width:100%;
+    height:800px;
+    background-position: center center; 
 }
 
 
@@ -17,7 +24,7 @@
 }
 
 .land-p2 h1{
-    padding-top:50px;
+    //padding-top:50px;
      font-family:'caveat';
      font-size:60px;
 }
@@ -124,12 +131,23 @@
 }
 
 
+@media (max-width: 768px){
+    
+      .land-p1{
+        height:540px;
+      }
+}
+
+
+
 
 
 @media (max-width: 670px) {
     
+    
   .land-p1{
-    height:230px;
+      background-image:none;
+      height:230px;
 }
 
 　  
@@ -137,6 +155,10 @@
 　   .welcome-logo{
       width:80%;
   }
+  
+  .land-p2 h1{
+    padding-top:50px;
+}
   
   .yes-frame{
       width:30%;
@@ -270,8 +292,10 @@
 }
 
 .land-p2 h1{
+    padding-top:50px;
     font-size:45px;
 }
+
 
 .land-p3 h1{
     font-size:45px;
