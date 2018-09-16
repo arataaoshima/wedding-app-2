@@ -20,7 +20,7 @@
 }
 
 .land-p2{
-    height:600px;
+    height:500px;
 }
 
 .land-p2 h1{
@@ -131,11 +131,30 @@
 }
 
 
-@media (max-width: 768px){
+@media (max-width: 769px){
     
       .land-p1{
         height:540px;
       }
+      
+      .land-p2 {
+          height:600px;
+      }
+      .greeting-wrapper{
+          width:80%;
+      }
+      
+      .chihiro-arata{
+         // width:30%;
+      }
+      
+      .greeting-message{
+          //background-color:red;
+      }
+      .greeting-message p {
+          font-size:0.9em;
+      }
+      
 }
 
 
